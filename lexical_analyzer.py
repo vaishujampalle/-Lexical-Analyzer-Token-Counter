@@ -1,4 +1,5 @@
 import re
+import sys
 
 # C language keywords
 keywords = {
@@ -107,5 +108,9 @@ def lexical_analyzer(filename):
 
 
 # Main program
-filename = input("Enter source file name: ")
+if len(sys.argv) > 1:
+    filename = sys.argv[1]
+else:
+    filename = input("Enter source file name: ")
+
 lexical_analyzer(filename)
