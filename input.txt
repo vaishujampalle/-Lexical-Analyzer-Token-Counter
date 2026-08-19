@@ -1,6 +1,3 @@
-int sum = a + b;
-float average = sum / 2.0;
-
-// Calculate average
-if (average > 50)
-printf("Pass");
+int a = 10; 
+int b = 20; 
+int c = a + b;
